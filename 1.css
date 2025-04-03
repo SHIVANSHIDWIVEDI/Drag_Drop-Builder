@@ -1,0 +1,65 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background: #f0f2f5; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image:url("https://img.freepik.com/free-vector/gradient-blue-background_23-2149337036.jpg?t=st=1743696257~exp=1743699857~hmac=053de8869ba19ee5df1dc5d4117248aa4b527294acc94ec87178a439e2791adc&w=1380");
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+.sidebar {
+    width: 100%;
+    max-width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.71);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.canvas {
+    flex: 1;
+    min-height: 500px;
+    border: 2px dashed black;
+    padding: 20px;
+    background:rgba(255, 255, 255, 0.71);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.draggable {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: grab;
+    background: #007bff;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+.draggable:hover {
+    transform: scale(1.05);
+}
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+    .sidebar {
+        width: 250px;
+    }
+}
+
+   
